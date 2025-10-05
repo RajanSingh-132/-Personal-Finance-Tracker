@@ -1,0 +1,20 @@
+{
+  "name": "personal-finance-tracker",
+  "version": "1.0.0",
+  "description": "Full Stack Personal Finance Tracker with React, Node.js, PostgreSQL, and Redis",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["finance", "tracker", "react", "nodejs", "postgresql", "redis"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
